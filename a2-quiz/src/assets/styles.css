@@ -1,0 +1,141 @@
+/* General Styles */
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #1e1e2f;
+  color: #f1f1f1;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  overflow: hidden;
+}
+
+#app {
+  width: 90%;
+  max-width: 600px;
+  background-color: #292b3d;
+  border-radius: 10px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5);
+  padding: 20px;
+  text-align: center;
+}
+
+/* Heading Styles */
+h1, h2 {
+  font-size: 1.8em;
+  margin-bottom: 20px;
+  color: #e94e77;
+}
+
+h1 {
+  font-size: 2.5em;
+}
+
+p {
+  font-size: 1.2em;
+  margin: 10px 0;
+}
+
+/* Button Styles */
+button {
+  background-color: #e94e77;
+  color: #f1f1f1;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1em;
+  margin: 10px;
+  transition: all 0.3s;
+}
+
+button:hover {
+  background-color: #d7426b;
+}
+
+button:active {
+  transform: scale(0.95);
+}
+
+/* Input Styles */
+input[type="text"] {
+  width: 80%;
+  padding: 10px;
+  border: 1px solid #e94e77;
+  border-radius: 5px;
+  font-size: 1em;
+  margin-bottom: 20px;
+  box-sizing: border-box;
+}
+
+/* Timer Styles */
+#timer {
+  font-size: 1.5em;
+  color: #ff9f43;
+  margin: 20px 0;
+}
+
+/* Quiz Question and Answers */
+#answers {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+#answers button {
+  background-color: #3a3d57;
+  padding: 15px;
+  border: 1px solid #52546f;
+  transition: all 0.3s;
+}
+
+#answers button:hover {
+  background-color: #52546f;
+}
+
+/* High Scores List */
+ol {
+  list-style: decimal;
+  padding: 0;
+  margin: 20px 0;
+  text-align: left;
+}
+
+ol li {
+  background-color: #3a3d57;
+  margin: 5px 0;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+/* Victory and Game Over Screens */
+h2 {
+  font-size: 1.8em;
+  color: #4caf50;
+}
+
+h2.game-over {
+  color: #e94e77;
+}
+
+
+/* Confetti Styles */
+@keyframes confetti {
+0% {
+  transform: translateY(0) rotate(0deg);
+}
+100% {
+  transform: translateY(500px) rotate(360deg);
+}
+}
+
+.confetti {
+position: fixed;
+width: 10px;
+height: 10px;
+background-color: var(--color, #ffcc00);
+top: -10px;
+animation: confetti 2s linear infinite;
+}
